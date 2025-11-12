@@ -1,0 +1,50 @@
+# === Java & Spring Boot ===
+target/
+out/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+*.log.*
+logs/
+
+# === IDEs ===
+
+## IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+## Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+## VS Code
+.vscode/
+
+# === System ===
+.DS_Store
+Thumbs.db
+
+# === Environment ===
+.env
+.env.*
+!.env.example
+
+# === Package managers ===
+# Maven
+.mvn/timing.properties
+
+# === Temporary files ===
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# === Test outputs ===
+test-output/
+surefire-reports/
+jacoco.exec
