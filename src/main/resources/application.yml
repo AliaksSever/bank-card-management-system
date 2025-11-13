@@ -1,21 +1,12 @@
 spring:
   application:
     name: bankcard
-  datasource:
-    url: ${SPRING_DATASOURCE_URL}
-    username: ${SPRING_DATASOURCE_USERNAME:postgres}
-    password: ${SPRING_DATASOURCE_PASSWORD:postgres}
-    driver-class-name: org.postgresql.Driver
   jpa:
-    hibernate:
-      ddl-auto: validate
-    show-sql: true
     properties:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
   liquibase:
-    enabled: false
     change-log: classpath:db/migration/db.changelog-master.yaml
 server:
   port: 8080
